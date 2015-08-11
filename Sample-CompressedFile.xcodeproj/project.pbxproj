@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E4058F21B7982E000B09A73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4058F11B7982E000B09A73 /* AppDelegate.swift */; };
+		8E4058F41B7982E000B09A73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4058F31B7982E000B09A73 /* ViewController.swift */; };
+		8E4058F71B7982E000B09A73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E4058F51B7982E000B09A73 /* Main.storyboard */; };
+		8E4058F91B7982E000B09A73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E4058F81B7982E000B09A73 /* Assets.xcassets */; };
+		8E4058FC1B7982E000B09A73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E4058FA1B7982E000B09A73 /* LaunchScreen.storyboard */; };
+		8E4059041B79AFAE00B09A73 /* ZipZap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4059031B79AFAE00B09A73 /* ZipZap.framework */; };
+		8E4059081B79B14400B09A73 /* MeteorBook.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8E4059071B79B14400B09A73 /* MeteorBook.pdf */; };
+		8E40590C1B79B9EA00B09A73 /* MeteorBook.pdf.zip in Resources */ = {isa = PBXBuildFile; fileRef = 8E40590B1B79B9EA00B09A73 /* MeteorBook.pdf.zip */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E4058EE1B7982E000B09A73 /* Sample-CompressedFile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-CompressedFile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E4058F11B7982E000B09A73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E4058F31B7982E000B09A73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E4058F61B7982E000B09A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E4058F81B7982E000B09A73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E4058FB1B7982E000B09A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E4058FD1B7982E000B09A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E4059031B79AFAE00B09A73 /* ZipZap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZipZap.framework; path = Carthage/Build/iOS/ZipZap.framework; sourceTree = "<group>"; };
+		8E4059071B79B14400B09A73 /* MeteorBook.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = MeteorBook.pdf; sourceTree = "<group>"; };
+		8E40590B1B79B9EA00B09A73 /* MeteorBook.pdf.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = MeteorBook.pdf.zip; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E4058EB1B7982E000B09A73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E4059041B79AFAE00B09A73 /* ZipZap.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E4058E51B7982E000B09A73 = {
+			isa = PBXGroup;
+			children = (
+				8E4059051B79AFBD00B09A73 /* Frameworks */,
+				8E4058F01B7982E000B09A73 /* Sample-CompressedFile */,
+				8E4058EF1B7982E000B09A73 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E4058EF1B7982E000B09A73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E4058EE1B7982E000B09A73 /* Sample-CompressedFile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E4058F01B7982E000B09A73 /* Sample-CompressedFile */ = {
+			isa = PBXGroup;
+			children = (
+				8E40590B1B79B9EA00B09A73 /* MeteorBook.pdf.zip */,
+				8E4059071B79B14400B09A73 /* MeteorBook.pdf */,
+				8E4058F11B7982E000B09A73 /* AppDelegate.swift */,
+				8E4058F31B7982E000B09A73 /* ViewController.swift */,
+				8E4058F51B7982E000B09A73 /* Main.storyboard */,
+				8E4058F81B7982E000B09A73 /* Assets.xcassets */,
+				8E4058FA1B7982E000B09A73 /* LaunchScreen.storyboard */,
+				8E4058FD1B7982E000B09A73 /* Info.plist */,
+			);
+			path = "Sample-CompressedFile";
+			sourceTree = "<group>";
+		};
+		8E4059051B79AFBD00B09A73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E4059031B79AFAE00B09A73 /* ZipZap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E4058ED1B7982E000B09A73 /* Sample-CompressedFile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E4059001B7982E000B09A73 /* Build configuration list for PBXNativeTarget "Sample-CompressedFile" */;
+			buildPhases = (
+				8E4058EA1B7982E000B09A73 /* Sources */,
+				8E4058EB1B7982E000B09A73 /* Frameworks */,
+				8E4058EC1B7982E000B09A73 /* Resources */,
+				8E4059061B79AFE000B09A73 /* Embed carthage frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sample-CompressedFile";
+			productName = "Sample-CompressedFile";
+			productReference = 8E4058EE1B7982E000B09A73 /* Sample-CompressedFile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E4058E61B7982E000B09A73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Technophile IT";
+				TargetAttributes = {
+					8E4058ED1B7982E000B09A73 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 8E4058E91B7982E000B09A73 /* Build configuration list for PBXProject "Sample-CompressedFile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E4058E51B7982E000B09A73;
+			productRefGroup = 8E4058EF1B7982E000B09A73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E4058ED1B7982E000B09A73 /* Sample-CompressedFile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E4058EC1B7982E000B09A73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E4058FC1B7982E000B09A73 /* LaunchScreen.storyboard in Resources */,
+				8E4059081B79B14400B09A73 /* MeteorBook.pdf in Resources */,
+				8E4058F91B7982E000B09A73 /* Assets.xcassets in Resources */,
+				8E4058F71B7982E000B09A73 /* Main.storyboard in Resources */,
+				8E40590C1B79B9EA00B09A73 /* MeteorBook.pdf.zip in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8E4059061B79AFE000B09A73 /* Embed carthage frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ZipZap.framework",
+			);
+			name = "Embed carthage frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E4058EA1B7982E000B09A73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E4058F41B7982E000B09A73 /* ViewController.swift in Sources */,
+				8E4058F21B7982E000B09A73 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E4058F51B7982E000B09A73 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E4058F61B7982E000B09A73 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E4058FA1B7982E000B09A73 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E4058FB1B7982E000B09A73 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E4058FE1B7982E000B09A73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8E4058FF1B7982E000B09A73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E4059011B7982E000B09A73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Sample-CompressedFile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.technophile.Sample-CompressedFile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8E4059021B7982E000B09A73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Sample-CompressedFile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.technophile.Sample-CompressedFile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E4058E91B7982E000B09A73 /* Build configuration list for PBXProject "Sample-CompressedFile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E4058FE1B7982E000B09A73 /* Debug */,
+				8E4058FF1B7982E000B09A73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E4059001B7982E000B09A73 /* Build configuration list for PBXNativeTarget "Sample-CompressedFile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E4059011B7982E000B09A73 /* Debug */,
+				8E4059021B7982E000B09A73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E4058E61B7982E000B09A73 /* Project object */;
+}
