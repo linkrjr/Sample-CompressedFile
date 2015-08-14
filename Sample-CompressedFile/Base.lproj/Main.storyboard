@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8152.3" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="g1P-MY-Spu">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--ZipZap-->
@@ -16,30 +17,100 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7z-96-3Xz">
-                                <rect key="frame" x="273" y="20" width="55" height="30"/>
-                                <state key="normal" title="Zip PDF"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="TGZ-3a-lbK">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="55" id="Gxl-wj-5AK" customClass="FilenameCell" customModule="Sample_CompressedFile" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="22" width="600" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gxl-wj-5AK" id="LBf-FW-hh9">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="603-vA-AeF">
+                                                    <rect key="frame" x="8" y="8" width="584" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="584" id="Ixd-5W-7lB"/>
+                                                        <constraint firstAttribute="height" constant="21" id="jFV-ZT-Nf6"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unzipped File:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbo-72-Qba">
+                                                    <rect key="frame" x="8" y="30" width="81" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="81" id="Obq-dS-o0B"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhs-O0-oed">
+                                                    <rect key="frame" x="97" y="27" width="478" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="hhs-O0-oed" secondAttribute="trailing" constant="17" id="Dv9-Op-EMn"/>
+                                                <constraint firstItem="603-vA-AeF" firstAttribute="trailing" secondItem="LBf-FW-hh9" secondAttribute="trailingMargin" id="E4K-u5-qel"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Fbo-72-Qba" secondAttribute="bottom" constant="1.5" id="PFe-3q-04Y"/>
+                                                <constraint firstItem="603-vA-AeF" firstAttribute="top" secondItem="LBf-FW-hh9" secondAttribute="topMargin" id="Yws-63-oBG"/>
+                                                <constraint firstItem="603-vA-AeF" firstAttribute="leading" secondItem="LBf-FW-hh9" secondAttribute="leadingMargin" id="cjx-AB-BhW"/>
+                                                <constraint firstItem="Fbo-72-Qba" firstAttribute="leading" secondItem="603-vA-AeF" secondAttribute="leading" id="liX-Jp-v0i"/>
+                                                <constraint firstItem="hhs-O0-oed" firstAttribute="leading" secondItem="Fbo-72-Qba" secondAttribute="trailing" constant="8" symbolic="YES" id="p9T-WX-0TR"/>
+                                                <constraint firstItem="hhs-O0-oed" firstAttribute="top" secondItem="LBf-FW-hh9" secondAttribute="topMargin" constant="19" id="r6Q-6K-Aw9"/>
+                                                <constraint firstItem="Fbo-72-Qba" firstAttribute="top" secondItem="603-vA-AeF" secondAttribute="bottom" constant="1" id="vwa-B2-Cma"/>
+                                                <constraint firstItem="Fbo-72-Qba" firstAttribute="centerY" secondItem="hhs-O0-oed" secondAttribute="centerY" id="yct-DJ-daY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="filename" destination="603-vA-AeF" id="gsk-Fo-4cj"/>
+                                            <outlet property="unzippedFilename" destination="hhs-O0-oed" id="K5P-Sl-goM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <action selector="zipPDFButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kFw-dp-ryp"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="A84-Qb-hCY"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="IFs-Nv-bBk"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uvw-KD-NKp">
-                                <rect key="frame" x="264" y="58" width="73" height="30"/>
-                                <state key="normal" title="Unzip PDF"/>
-                                <connections>
-                                    <action selector="unzipPDFButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t60-0i-KH5"/>
-                                </connections>
-                            </button>
+                            </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rD2-Gw-UBH">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem enabled="NO" title="Unzip" id="D4Q-fB-Gxz">
+                                        <connections>
+                                            <action selector="unzipPDFButtonTapped:" destination="BYZ-38-t0r" id="CjO-V2-OWE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="0PO-aq-5Wz"/>
+                                    <barButtonItem title="Clean" id="VQx-bZ-nQd">
+                                        <connections>
+                                            <action selector="cleanButtonTapped:" destination="BYZ-38-t0r" id="jcE-86-RMQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Uvw-KD-NKp" firstAttribute="top" secondItem="Y7z-96-3Xz" secondAttribute="bottom" constant="8" symbolic="YES" id="ALl-6E-JsJ"/>
-                            <constraint firstItem="Y7z-96-3Xz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d13-wb-eIe"/>
-                            <constraint firstItem="Y7z-96-3Xz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gw2-vN-QsN"/>
-                            <constraint firstItem="Uvw-KD-NKp" firstAttribute="centerX" secondItem="Y7z-96-3Xz" secondAttribute="centerX" id="pm2-Xs-QHD"/>
+                            <constraint firstItem="TGZ-3a-lbK" firstAttribute="top" secondItem="rD2-Gw-UBH" secondAttribute="bottom" id="GgG-fY-nfP"/>
+                            <constraint firstItem="rD2-Gw-UBH" firstAttribute="leading" secondItem="TGZ-3a-lbK" secondAttribute="leading" id="Mkv-iq-l7P"/>
+                            <constraint firstAttribute="trailing" secondItem="rD2-Gw-UBH" secondAttribute="trailing" id="cMV-an-e07"/>
+                            <constraint firstItem="rD2-Gw-UBH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dhG-G7-hEe"/>
+                            <constraint firstItem="TGZ-3a-lbK" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="qGK-qc-YeE"/>
+                            <constraint firstItem="TGZ-3a-lbK" firstAttribute="trailing" secondItem="rD2-Gw-UBH" secondAttribute="trailing" id="vTF-SH-1fL"/>
+                            <constraint firstItem="rD2-Gw-UBH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="w4P-dw-HcF"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="ZipZap" id="XrQ-mW-IjJ"/>
+                    <connections>
+                        <outlet property="tableView" destination="TGZ-3a-lbK" id="6vO-dc-BcM"/>
+                        <outlet property="unzipButton" destination="D4Q-fB-Gxz" id="KP0-hj-Q3d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

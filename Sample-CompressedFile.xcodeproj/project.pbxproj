@@ -15,6 +15,16 @@
 		8E4059041B79AFAE00B09A73 /* ZipZap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4059031B79AFAE00B09A73 /* ZipZap.framework */; };
 		8E4059081B79B14400B09A73 /* MeteorBook.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8E4059071B79B14400B09A73 /* MeteorBook.pdf */; };
 		8E40590C1B79B9EA00B09A73 /* MeteorBook.pdf.zip in Resources */ = {isa = PBXBuildFile; fileRef = 8E40590B1B79B9EA00B09A73 /* MeteorBook.pdf.zip */; };
+		8E4059401B7D67AA00B09A73 /* FilenameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E40593F1B7D67AA00B09A73 /* FilenameCell.swift */; };
+		8E40594B1B7D6BEC00B09A73 /* calibres-a185eab1fcd36c873cc231fb678a1d70.json.zip in Resources */ = {isa = PBXBuildFile; fileRef = 8E4059421B7D6BEC00B09A73 /* calibres-a185eab1fcd36c873cc231fb678a1d70.json.zip */; };
+		8E40594C1B7D6BEC00B09A73 /* cn-0b63da51da5c10864df6ea9ca6952a76.json.zip in Resources */ = {isa = PBXBuildFile; fileRef = 8E4059431B7D6BEC00B09A73 /* cn-0b63da51da5c10864df6ea9ca6952a76.json.zip */; };
+		8E40594D1B7D6BEC00B09A73 /* en-b5b0e91fa6aabdfad4eb05226a1b9348.json.zip in Resources */ = {isa = PBXBuildFile; fileRef = 8E4059441B7D6BEC00B09A73 /* en-b5b0e91fa6aabdfad4eb05226a1b9348.json.zip */; };
+		8E40594E1B7D6BEC00B09A73 /* es-ff5bb9a983512a7289624e269c95a6bb.json.zip in Resources */ = {isa = PBXBuildFile; fileRef = 8E4059451B7D6BEC00B09A73 /* es-ff5bb9a983512a7289624e269c95a6bb.json.zip */; };
+		8E40594F1B7D6BEC00B09A73 /* fr-bbf247a544027e4286a956bdcdaa710d.json.zip in Resources */ = {isa = PBXBuildFile; fileRef = 8E4059461B7D6BEC00B09A73 /* fr-bbf247a544027e4286a956bdcdaa710d.json.zip */; };
+		8E4059501B7D6BEC00B09A73 /* jp-bd3159073b3f626d637dc1c22118a7ab.json.zip in Resources */ = {isa = PBXBuildFile; fileRef = 8E4059471B7D6BEC00B09A73 /* jp-bd3159073b3f626d637dc1c22118a7ab.json.zip */; };
+		8E4059511B7D6BEC00B09A73 /* lookups-ccaa20cca0d0010bd57fe22f1192b97e.json.zip in Resources */ = {isa = PBXBuildFile; fileRef = 8E4059481B7D6BEC00B09A73 /* lookups-ccaa20cca0d0010bd57fe22f1192b97e.json.zip */; };
+		8E4059521B7D6BEC00B09A73 /* status.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E4059491B7D6BEC00B09A73 /* status.json */; };
+		8E4059531B7D6BEC00B09A73 /* watches-4a6526c0f74eb14954cc035270d3f7c6.json.zip in Resources */ = {isa = PBXBuildFile; fileRef = 8E40594A1B7D6BEC00B09A73 /* watches-4a6526c0f74eb14954cc035270d3f7c6.json.zip */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +38,16 @@
 		8E4059031B79AFAE00B09A73 /* ZipZap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZipZap.framework; path = Carthage/Build/iOS/ZipZap.framework; sourceTree = "<group>"; };
 		8E4059071B79B14400B09A73 /* MeteorBook.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = MeteorBook.pdf; sourceTree = "<group>"; };
 		8E40590B1B79B9EA00B09A73 /* MeteorBook.pdf.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = MeteorBook.pdf.zip; sourceTree = "<group>"; };
+		8E40593F1B7D67AA00B09A73 /* FilenameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilenameCell.swift; sourceTree = "<group>"; };
+		8E4059421B7D6BEC00B09A73 /* calibres-a185eab1fcd36c873cc231fb678a1d70.json.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "calibres-a185eab1fcd36c873cc231fb678a1d70.json.zip"; sourceTree = "<group>"; };
+		8E4059431B7D6BEC00B09A73 /* cn-0b63da51da5c10864df6ea9ca6952a76.json.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "cn-0b63da51da5c10864df6ea9ca6952a76.json.zip"; sourceTree = "<group>"; };
+		8E4059441B7D6BEC00B09A73 /* en-b5b0e91fa6aabdfad4eb05226a1b9348.json.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "en-b5b0e91fa6aabdfad4eb05226a1b9348.json.zip"; sourceTree = "<group>"; };
+		8E4059451B7D6BEC00B09A73 /* es-ff5bb9a983512a7289624e269c95a6bb.json.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "es-ff5bb9a983512a7289624e269c95a6bb.json.zip"; sourceTree = "<group>"; };
+		8E4059461B7D6BEC00B09A73 /* fr-bbf247a544027e4286a956bdcdaa710d.json.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "fr-bbf247a544027e4286a956bdcdaa710d.json.zip"; sourceTree = "<group>"; };
+		8E4059471B7D6BEC00B09A73 /* jp-bd3159073b3f626d637dc1c22118a7ab.json.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "jp-bd3159073b3f626d637dc1c22118a7ab.json.zip"; sourceTree = "<group>"; };
+		8E4059481B7D6BEC00B09A73 /* lookups-ccaa20cca0d0010bd57fe22f1192b97e.json.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "lookups-ccaa20cca0d0010bd57fe22f1192b97e.json.zip"; sourceTree = "<group>"; };
+		8E4059491B7D6BEC00B09A73 /* status.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = status.json; sourceTree = "<group>"; };
+		8E40594A1B7D6BEC00B09A73 /* watches-4a6526c0f74eb14954cc035270d3f7c6.json.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "watches-4a6526c0f74eb14954cc035270d3f7c6.json.zip"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +65,7 @@
 		8E4058E51B7982E000B09A73 = {
 			isa = PBXGroup;
 			children = (
+				8E4059411B7D6BEC00B09A73 /* zips */,
 				8E4059051B79AFBD00B09A73 /* Frameworks */,
 				8E4058F01B7982E000B09A73 /* Sample-CompressedFile */,
 				8E4058EF1B7982E000B09A73 /* Products */,
@@ -70,6 +91,7 @@
 				8E4058F81B7982E000B09A73 /* Assets.xcassets */,
 				8E4058FA1B7982E000B09A73 /* LaunchScreen.storyboard */,
 				8E4058FD1B7982E000B09A73 /* Info.plist */,
+				8E40593F1B7D67AA00B09A73 /* FilenameCell.swift */,
 			);
 			path = "Sample-CompressedFile";
 			sourceTree = "<group>";
@@ -80,6 +102,23 @@
 				8E4059031B79AFAE00B09A73 /* ZipZap.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E4059411B7D6BEC00B09A73 /* zips */ = {
+			isa = PBXGroup;
+			children = (
+				8E4059421B7D6BEC00B09A73 /* calibres-a185eab1fcd36c873cc231fb678a1d70.json.zip */,
+				8E4059431B7D6BEC00B09A73 /* cn-0b63da51da5c10864df6ea9ca6952a76.json.zip */,
+				8E4059441B7D6BEC00B09A73 /* en-b5b0e91fa6aabdfad4eb05226a1b9348.json.zip */,
+				8E4059451B7D6BEC00B09A73 /* es-ff5bb9a983512a7289624e269c95a6bb.json.zip */,
+				8E4059461B7D6BEC00B09A73 /* fr-bbf247a544027e4286a956bdcdaa710d.json.zip */,
+				8E4059471B7D6BEC00B09A73 /* jp-bd3159073b3f626d637dc1c22118a7ab.json.zip */,
+				8E4059481B7D6BEC00B09A73 /* lookups-ccaa20cca0d0010bd57fe22f1192b97e.json.zip */,
+				8E4059491B7D6BEC00B09A73 /* status.json */,
+				8E40594A1B7D6BEC00B09A73 /* watches-4a6526c0f74eb14954cc035270d3f7c6.json.zip */,
+			);
+			name = zips;
+			path = "Sample-CompressedFile/zips";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +180,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E4058FC1B7982E000B09A73 /* LaunchScreen.storyboard in Resources */,
+				8E4059511B7D6BEC00B09A73 /* lookups-ccaa20cca0d0010bd57fe22f1192b97e.json.zip in Resources */,
 				8E4059081B79B14400B09A73 /* MeteorBook.pdf in Resources */,
+				8E40594C1B7D6BEC00B09A73 /* cn-0b63da51da5c10864df6ea9ca6952a76.json.zip in Resources */,
+				8E40594E1B7D6BEC00B09A73 /* es-ff5bb9a983512a7289624e269c95a6bb.json.zip in Resources */,
+				8E40594D1B7D6BEC00B09A73 /* en-b5b0e91fa6aabdfad4eb05226a1b9348.json.zip in Resources */,
 				8E4058F91B7982E000B09A73 /* Assets.xcassets in Resources */,
+				8E4059501B7D6BEC00B09A73 /* jp-bd3159073b3f626d637dc1c22118a7ab.json.zip in Resources */,
+				8E4059531B7D6BEC00B09A73 /* watches-4a6526c0f74eb14954cc035270d3f7c6.json.zip in Resources */,
 				8E4058F71B7982E000B09A73 /* Main.storyboard in Resources */,
+				8E40594B1B7D6BEC00B09A73 /* calibres-a185eab1fcd36c873cc231fb678a1d70.json.zip in Resources */,
 				8E40590C1B79B9EA00B09A73 /* MeteorBook.pdf.zip in Resources */,
+				8E40594F1B7D6BEC00B09A73 /* fr-bbf247a544027e4286a956bdcdaa710d.json.zip in Resources */,
+				8E4059521B7D6BEC00B09A73 /* status.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E4059401B7D67AA00B09A73 /* FilenameCell.swift in Sources */,
 				8E4058F41B7982E000B09A73 /* ViewController.swift in Sources */,
 				8E4058F21B7982E000B09A73 /* AppDelegate.swift in Sources */,
 			);
@@ -330,6 +379,7 @@
 				8E4059021B7982E000B09A73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

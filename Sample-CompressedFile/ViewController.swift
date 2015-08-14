@@ -9,18 +9,67 @@
 import UIKit
 import ZipZap
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet var tableView:UITableView!
+    @IBOutlet weak var unzipButton: UIBarButtonItem!
+    
+    private var files:[NSURL] = []
+    private var selectedCell:FilenameCell?
+    private var selectedCellIndexPath:NSIndexPath?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        self.files = listZipFilesInDisk()
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.unzipButton.enabled = true
+        
+        if let selectedIndexPath = self.selectedCellIndexPath {
+            self.tableView.deselectRowAtIndexPath(selectedIndexPath, animated: true)
+        }
+        
+        self.selectedCellIndexPath = indexPath
+        self.selectedCell = self.tableView(tableView, cellForRowAtIndexPath: indexPath) as? FilenameCell
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.files.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! FilenameCell
+        cell.setupCell(self.files[indexPath.row])
+        return cell
+    }
 
+    private func listZipFilesInDisk() -> [NSURL] {
+        let fileManager = NSFileManager.defaultManager()
+        let bundle = NSBundle.mainBundle()
+        var zipFiles:[NSURL] = []
+        
+        do {
+            let content = try fileManager.contentsOfDirectoryAtURL(bundle.resourceURL!, includingPropertiesForKeys: [NSURLFileResourceTypeKey], options: .SkipsHiddenFiles)
+            zipFiles = content.filter({ (element:NSURL) -> Bool in
+                return element.pathExtension == "zip"
+            })
+        }
+        catch {
+        }
+
+//        let search = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        
+        return zipFiles
+    }
+    
     @IBAction func zipPDFButtonTapped(sender: AnyObject) {
         do {
             let bundle = NSBundle.mainBundle()
@@ -37,20 +86,36 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func cleanButtonTapped(sender: AnyObject) {
+        let fileManager = NSFileManager.defaultManager()
+        let bundle = NSBundle.mainBundle()
+        var zipFiles:[NSURL] = []
+        
+        do {
+            let content = try fileManager.contentsOfDirectoryAtURL(bundle.resourceURL!, includingPropertiesForKeys: [NSURLFileResourceTypeKey], options: .SkipsHiddenFiles)
+            zipFiles = content.filter({ (element:NSURL) -> Bool in
+                return element.pathExtension == "json"
+            })
+            for file:NSURL in zipFiles {
+                try fileManager.removeItemAtPath(file.path!)
+            }
+        }
+        catch {
+        }
+        
+    }
+    
     @IBAction func unzipPDFButtonTapped(sender: AnyObject) {
         do {
-            
             let bundle = NSBundle.mainBundle()
-            
-            let archive = try ZZArchive(URL: NSURL(fileURLWithPath: bundle.resourcePath!.stringByAppendingPathComponent("pdf.zip")))
-            
-//            bundle.resourcePath!.stringByAppendingPathComponent("unzipped.pdf")
-            
-            for entry in archive.entries {
-                
-                let data = try (entry as! ZZArchiveEntry).newData()
-                data.writeToURL(NSURL(fileURLWithPath: bundle.resourcePath!.stringByAppendingPathComponent("unzipped.pdf")), atomically: false)
-                
+            print(bundle.resourcePath!)
+
+            let archive = try ZZArchive(URL: self.selectedCell!.fileURL!)
+            let entries = archive.entries as! [ZZArchiveEntry]
+            for entry:ZZArchiveEntry in entries {
+                let data = try entry.newData()
+                data.writeToURL(NSURL(fileURLWithPath: bundle.resourcePath!.stringByAppendingPathComponent(entry.fileName)), atomically: false)
+                self.selectedCell!.progressComplete(entry.fileName)
             }
             
         } catch {
